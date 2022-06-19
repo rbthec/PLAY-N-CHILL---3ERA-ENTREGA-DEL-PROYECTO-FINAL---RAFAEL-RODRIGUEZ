@@ -1,0 +1,108 @@
+/*Media queries donde aplico la adptabilidad para pantallas de 600px y le doy una aperiencia diferente a la pagina cuando esta en modo mobile*/
+ 
+
+@media only screen and (max-width: 480px){
+
+  body{
+    background-color:rgb(222, 255, 222);
+    
+}
+
+    header{
+        background-color:$verde;
+        width: 100%;
+        clear: both;
+        display: table;
+
+ /*Se usaron Variables */ 
+
+            & .menu.menu li:hover {
+        background:$yellow; }
+    }
+
+ /*Se usaron Variables */ 
+
+  .contenedorp{
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    gap: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: 
+    "letras-1"
+    "img-1"
+    "letras-2"
+    "img-2"
+    "letras-3"
+    "img-3"
+    "letras-4"
+    "img-4"
+    "letras-5"
+    "img-5"
+    ;
+      gap: 20px;
+
+      #img{
+        width: 330px;
+        height: auto;
+        margin-left: 60px;
+        border:  20px $verde solid;
+        background-color:$verde;
+
+                       } 
+
+      .img-1{
+       grid-area: img-1;
+       padding-bottom: 0px;
+                        }
+
+      #letras{
+        width: 300px;
+        height: auto;
+        font-size: medium;
+        border: 3px $verde solid;
+        background-color:$verde;
+        margin-left: 75px;
+   
+        &:hover{
+           background-color:$yellow; 
+           transform: skew(10deg);
+           border-radius: 0%;
+       }
+       
+                                }
+
+
+                                 
+                                       }  
+
+.botonhome{
+  margin-left: 30px;
+
+}
+
+footer{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+
+      
+  h5{
+    font-family: 'Roboto Flex', sans-serif;
+    margin-left: 0px;
+    text-align: center;
+    color:rgb(0, 158, 55) ;
+                                }
+
+}
+
+
+
+}
