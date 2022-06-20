@@ -23,7 +23,8 @@ header {
     transition: all 2s ease; }
     header h1:hover {
       transform: skew(10deg);
-      border-radius: 0%; }
+      border-radius: 0%;
+      color: white; }
   header .menu {
     margin: auto;
     padding: 0%;
@@ -198,7 +199,7 @@ footer {
   /*Se usaron Variables */
   .contenedorp {
     display: grid;
-    flex-wrap: wrap;
+    display: flex;
     grid-template-columns: 1fr;
     grid-template-rows: 5fr;
     gap: 40px;

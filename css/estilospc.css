@@ -222,7 +222,8 @@ footer {
       .contenedorp #letras:hover {
         background-color: #ecd65e;
         transform: skew(10deg);
-        border-radius: 0%; }
+        border-radius: 0%;
+        color: black; }
   .botonhome {
     margin-left: 30px; }
   footer {

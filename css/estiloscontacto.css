@@ -16,45 +16,39 @@ header {
   background-color: #34a0ff;
   width: 100%;
   clear: both;
-  content: " ";
   display: table; }
-
-h1 {
-  font-family: 'Anton', sans-serif;
-  margin: 0;
-  padding: 10px 35px;
-  font-weight: bold;
-  color: black;
-  font-size: 5em;
-  transition: all 2s ease; }
-
-h1:hover {
-  transform: skew(10deg);
-  border-radius: 0%; }
-
-.menu {
-  margin: auto;
-  padding: 0%;
-  width: 90%;
-  max-width: 1000px;
-  font-family: 'Roboto Flex', sans-serif; }
-
-.menu ul li {
-  text-decoration: none;
-  color: black;
-  list-style: none;
-  margin-left: 25px;
-  padding: 20px 0px;
-  font-weight: bold;
-  float: right;
-  display: block; }
-
-.menu li:hover {
-  background: #00ffff; }
-
-.menu li {
-  display: inline-block;
-  text-align: center; }
+  header h1 {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 10px 35px;
+    font-weight: bold;
+    color: black;
+    font-size: 5em;
+    transition: all 2s ease; }
+    header h1:hover {
+      transform: skew(10deg);
+      border-radius: 0%;
+      color: white; }
+  header .menu {
+    margin: auto;
+    padding: 0%;
+    width: 90%;
+    max-width: 1000px;
+    font-family: 'Roboto Flex', sans-serif; }
+    header .menu.menu ul li {
+      text-decoration: none;
+      color: black;
+      list-style: none;
+      margin-left: 25px;
+      padding: 20px 0px;
+      font-weight: bold;
+      float: right;
+      display: block; }
+    header .menu.menu li:hover {
+      background: #00ffff; }
+      header .menu.menu li:hover.menu li {
+        display: inline-block;
+        text-align: center; }
 
 .contenedorp {
   display: grid;
@@ -127,19 +121,68 @@ footer {
 .botonhome {
   margin-left: 50px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
+  /*Se usaron Variables */
   header {
     background-color: #00ff59;
-    width: 103%;
+    width: 100%;
     clear: both;
-    content: " ";
     display: table; }
-  .menu li:hover {
-    background: #fffb00; }
+    header .menu.menu li:hover {
+      background: #ecd65e; }
   .contenedorp {
-    gap: 20px; }
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 25px;
+    text-align: center;
+    align-items: center;
+    grid-template-areas: "letras-tabla" "form" "location"; }
   #cajas {
-    background-color: #00ff59; }
+    background-color: #00ff59;
+    height: auto; }
+  .letras-tabla {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 17px;
+    font-style: bold;
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding: 12px;
+    color: black;
+    border: 3px solid black;
+    grid-area: letras-tabla; }
+  .table {
+    border: 3px black solid;
+    width: 300px;
+    font-size: 10px; }
+  .form {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    width: 350px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 12px;
+    border: 3px solid black;
+    grid-area: form; }
+  .location {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    width: 350px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 12px;
+    border: 3px solid black;
+    grid-area: location; }
   h4 {
     font-family: 'Roboto Flex', sans-serif;
     margin-left: 0px;
