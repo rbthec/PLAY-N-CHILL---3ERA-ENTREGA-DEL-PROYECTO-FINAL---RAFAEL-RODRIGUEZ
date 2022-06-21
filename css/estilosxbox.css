@@ -89,7 +89,6 @@ header {
     text-align: center;
     grid-area: letras-1; }
   .contenedorp .img-1 {
-    border: 20px solid #34a0ff;
     grid-area: img-1;
     width: 620px;
     height: auto;
